@@ -10,6 +10,16 @@ use PHPUnit\Framework\TestCase;
 
 class FrozenClockTest extends TestCase
 {
+    public function testFrozenNowWithoutConstructorArgument()
+    {
+        $clock = new FrozenClock();
+
+        $now1 = $clock->now();
+        $now2 = $clock->now();
+
+        $this->assertSame($now1, $now2);
+    }
+
     /**
      * @dataProvider providerFrozenNow
      */
