@@ -39,6 +39,7 @@ use E7\Clock\SystemClock;
 $timezone = new DateTimeZone('Europe/Berlin');
 $clock = new SystemClock(timezone);
 $now = $clock->now();
+```
 
 ### `FrozenClock`
 
