@@ -33,7 +33,7 @@ jobs:
       run: composer install --prefer-dist --no-progress
 
     - name: Run tests
-      uses: php-actions/phpunit@v6.5
+      uses: php-actions/phpunit@v6
       
     # Add a test script to composer.json, for instance: "test": "vendor/bin/phpunit"
     # Docs: https://getcomposer.org/doc/articles/scripts.md
