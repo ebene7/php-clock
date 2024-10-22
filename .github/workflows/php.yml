@@ -37,6 +37,8 @@ jobs:
 
     - name: Run tests
       uses: php-actions/phpunit@master
+      with:
+        configuration: phpunit.xml.dist
       
     # Add a test script to composer.json, for instance: "test": "vendor/bin/phpunit"
     # Docs: https://getcomposer.org/doc/articles/scripts.md
