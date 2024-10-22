@@ -8,6 +8,7 @@
             "email": "daniel@ebene7.com"
         }
     ],
+    "license": "MIT",
     "require": {
         "php": ">=5.4.0"
     },
